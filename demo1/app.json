@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#f0f",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "凡音 - 舒洪凡",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "sitemapLocation": "sitemap70.json"
+}

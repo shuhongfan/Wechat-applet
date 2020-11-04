@@ -1,0 +1,12 @@
+<view class="indexController">
+  <image wx:if="{{userinfo.avatarUrl}}" class="avatarUrl" src="{{userinfo.avatarUrl}}"></image>
+  <button wx:else open-type="getUserInfo" bindgetuserinfo='handleGetUserInfo'>获取用户头像</button>
+  <text wx:if="{{userinfo.avatarUrl}}" class="userName">{{userinfo.nickName}}</text>
+  <!-- 测试事件绑定
+  <view class="goStudy" catchtap="handleParent">
+    <text catchtap="handleChild">hello world</text>
+  </view> -->
+  <view class="goStudy" catchtap="toLogs">
+    <text>hello world</text>
+  </view>
+</view>
