@@ -1,50 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="70005ee4-1ef3-4f01-986c-26ddda331d75" name="默认的" comment="" />
+    <list default="true" id="5453d27e-bf8c-48c9-97e8-90efc586283d" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/biji.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login/login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login/login.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login/login.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/personal/personal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/personal/personal.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/personal/personal.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/personal/personal.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/video/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/video/video.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/video/video.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/video/video.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1jp2EAF1rNfXm7TjVPys266x6c0" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Wechat mini program page js file(Page API)" />
+        <option value="Wechat mini program page json file(Page API)" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jrZ57Cz3ESit6SFMeKsWODrfk3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="新增" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\DEMO\微信小程序\fanyin\static" />
+      <recent name="F:\DEMO\微信小程序\fanyin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="70005ee4-1ef3-4f01-986c-26ddda331d75" name="默认的" comment="" />
-      <created>1604486601090</created>
+      <changelist id="5453d27e-bf8c-48c9-97e8-90efc586283d" name="默认的" comment="" />
+      <created>1604563987275</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604486601090</updated>
-      <workItem from="1604486602564" duration="497000" />
-      <workItem from="1604487132949" duration="113000" />
-      <workItem from="1604487267458" duration="2977000" />
+      <updated>1604563987275</updated>
+      <workItem from="1604563988325" duration="1263000" />
+      <workItem from="1604565281212" duration="11011000" />
+      <workItem from="1604656181767" duration="80000" />
+      <workItem from="1604656264468" duration="6000" />
+      <workItem from="1604656271792" duration="6940000" />
+      <workItem from="1604728301401" duration="11738000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="270" y="56" key="SettingsEditor" timestamp="1604487246579">
+    <state x="533" y="120" key="#JavaScript" timestamp="1604739447976">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="56" key="SettingsEditor/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1604487246579" />
+    <state x="533" y="120" key="#JavaScript/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1604739447976" />
+    <state x="182" y="108" key="SettingsEditor" timestamp="1604565262228">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="182" y="108" key="SettingsEditor/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1604565262228" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604742323217">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1604742323217" />
   </component>
 </project>
