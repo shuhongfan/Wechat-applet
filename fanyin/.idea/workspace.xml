@@ -19,29 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5453d27e-bf8c-48c9-97e8-90efc586283d" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/biji.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login/login.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login/login.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login/login.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/personal/personal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/personal/personal.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/personal/personal.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/personal/personal.wxss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/video/video.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/video/video.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/video/video.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/video/video.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+    <list default="true" id="5453d27e-bf8c-48c9-97e8-90efc586283d" name="默认的" comment="2020.11.7 end">
+      <change afterPath="$PROJECT_DIR$/pages/recommendSong/recommendSong.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/recommendSong/recommendSong.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/recommendSong/recommendSong.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/recommendSong/recommendSong.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/songDetail/songDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/songDetail/songDetail.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/songDetail/songDetail.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/songDetail/songDetail.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/video/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/video/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/video/video.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/video/video.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/video/video.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/video/video.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/video/video.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/video/video.wxss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +43,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Wechat mini program page js file(Page API)" />
         <option value="Wechat mini program page json file(Page API)" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="JupyterTrust" id="eea15953-9249-4ea2-a8ca-8a79baf5da85" />
   <component name="ProjectId" id="1jrZ57Cz3ESit6SFMeKsWODrfk3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="新增" />
@@ -98,8 +91,20 @@
       <workItem from="1604656181767" duration="80000" />
       <workItem from="1604656264468" duration="6000" />
       <workItem from="1604656271792" duration="6940000" />
-      <workItem from="1604728301401" duration="11738000" />
+      <workItem from="1604728301401" duration="12056000" />
+      <workItem from="1605197821296" duration="136000" />
+      <workItem from="1605197989391" duration="11000" />
+      <workItem from="1605363992635" duration="9093000" />
+      <workItem from="1605416807605" duration="3289000" />
     </task>
+    <task id="LOCAL-00001" summary="2020.11.7 end">
+      <created>1604748811000</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604748811000</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,18 +122,41 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2020.11.7 end" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.11.7 end" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="533" y="120" key="#JavaScript" timestamp="1604739447976">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="533" y="120" key="#JavaScript/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1604739447976" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605370585093">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1605370585093" />
     <state x="182" y="108" key="SettingsEditor" timestamp="1604565262228">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="182" y="108" key="SettingsEditor/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1604565262228" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604748812757">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1604748812757" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604742323217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1604742323217" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/pages/songDetail/songDetail.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

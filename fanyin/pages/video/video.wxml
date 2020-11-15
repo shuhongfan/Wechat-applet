@@ -27,7 +27,14 @@
         </view>
     </scroll-view>
 <!--    视频列表区域-->
-    <scroll-view scroll-y class="viewScroll">
+    <scroll-view
+            scroll-y
+            class="viewScroll"
+            refresher-enabled
+            bindrefresherrefresh="handleReFresher"
+            refresher-triggered="{{isTriggered}}"
+            bindscrolltolower="handleToLower"
+    >
         <view class="videoItem" wx:for="{{videoList}}" wx:key="id">
             <video
                     wx:if="{{videoID===item.data.vid}}"
@@ -37,6 +44,8 @@
                     poster="{{item.data.coverUrl}}"
                     bindplay="handlePlay"
                     id="{{item.data.vid}}"
+                    bindtimeupdate="handleTimeUpdate"
+                    bindended="handleEnded"
             ></video>
 <!--            video 性能优化-->
             <image

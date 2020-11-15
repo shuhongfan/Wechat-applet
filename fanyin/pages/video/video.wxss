@@ -46,6 +46,10 @@
 /*视频列表*/
 .viewScroll{
     margin-top: 10rpx;
+    /*动态计算css宽高*/
+    /*1vh=1%的视口高度*/
+    /*1vw=1%的视口宽度*/
+    height: calc(100vh - 152rpx);
 }
 .videoItem{
     padding: 0 3%;

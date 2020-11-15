@@ -1,5 +1,6 @@
 {
   "usingComponents": {
   },
-  "navigationBarTitleText": "视频 - 凡音"
+  "navigationBarTitleText": "视频 - 凡音",
+  "enablePullDownRefresh": true
 }
