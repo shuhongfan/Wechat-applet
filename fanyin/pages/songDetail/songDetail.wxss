@@ -70,3 +70,24 @@
     height: 370rpx;
     border-radius: 50%;
 }
+
+/*底部控制区域*/
+.musicControl{
+    position: absolute;
+    bottom: 40rpx;
+    left: 0;
+    border-top: 1rpx solid #fff;
+    width: 100%;
+    display: flex;
+}
+.musicControl text{
+    width: 20%;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 50rpx;
+}
+.musicControl text.big{
+    font-size: 80rpx;
+}

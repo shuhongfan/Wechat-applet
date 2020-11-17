@@ -37,5 +37,15 @@ Page({
        this.setData({
            recommendList: recommendListData.recommend
        })
-   }
+   },
+    // 跳转至songDetail页面
+    toSongDetail (event){
+        // data-song="{{item}}"
+        let song=event.currentTarget.dataset.song
+        wx.navigateTo({
+            // 不能将song对象作为参数传递 长度过长 会被截取
+            // url:'/pages/songDetail/songDetail?song='+JSON.stringify(song)
+            url:'/pages/songDetail/songDetail?musicId='+song.id
+        })
+    }
 });
