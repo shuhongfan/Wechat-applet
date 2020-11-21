@@ -1,4 +1,7 @@
 import request from "../../utils/request";
+import PubSub from 'pubsub-js'
+import Moment from "moment"
+
 // 获取全局实例
 const appInstance = getApp()
 
@@ -9,7 +12,15 @@ Page({
         // 歌曲详情对象
         song:{},
         // 音乐id
-        musicId: ''
+        musicId: '',
+        //音乐的链接
+        musicLink:'',
+        // 当前播放时间
+        currentTime: '00:00',
+        // 音乐时长
+        durationTime: '00:00',
+        // 实时进度条长度
+        currentWidth: 0
     },
     onLoad: function (options) {
         // options用来接收路由跳转的query参数
@@ -47,6 +58,28 @@ Page({
             console.log('Stop')
             this.changePlayState(false)
         })
+        // 监听音乐播放自然结束
+        this.backgroundAudioManager.onEnded(()=>{
+            // 自动切换至下一首音乐 并且自动播放
+            PubSub.publish('switchType','next')
+            // 将实时进度条的长度还原成0
+            this.setData({
+                currentTime: '00:00',
+                durationTime: '00:00'
+            })
+        })
+        // 监听音乐实时播放的进度
+        this.backgroundAudioManager.onTimeUpdate(()=>{
+            // console.log('总时长：'+this.backgroundAudioManager.duration)
+            // console.log('实时的时长：'+this.backgroundAudioManager.currentTime)
+            // 格式化实时时间
+            let currentTime=Moment(this.backgroundAudioManager.currentTime*1000).format('mm:ss')
+            let currentWidth=this.backgroundAudioManager.currentTime/this.backgroundAudioManager.duration*450
+            this.setData({
+                currentTime,
+                currentWidth
+            })
+        })
     },
     // 点击播放暂停回调
     handleMusicPlay (){
@@ -55,16 +88,19 @@ Page({
         // this.setData({
         //     isPlay
         // })
-        let {musicId}=this.data
-        this.musicControl(isPlay,musicId)
+        let {musicId,musicLink}=this.data
+        this.musicControl(isPlay,musicId,musicLink)
     },
     // 获取音乐详情功能函数
     async getMusicInfo(musicId){
         let songData=await request('/song/detail',{
             ids:musicId
         })
+        // moment格式化
+        let durationTime=Moment(songData.songs[0].dt).format('mm:ss')
         this.setData({
-            song:songData.songs[0]
+            song:songData.songs[0],
+            durationTime
         })
         // 动态修改标题
         wx.setNavigationBarTitle({
@@ -72,15 +108,18 @@ Page({
         })
     },
     // 控制音乐播放、暂停的功能函数
-    async musicControl(isPlay,musicId){
+    async musicControl(isPlay,musicId,musicLink){
         if (isPlay){ // 音乐播放
-            // 获取音乐播放链接
-            let musicLinkData=await request('/song/url',{
-                id:musicId
-            })
-            let musicLink=musicLinkData.data[0].url
-
-
+            if (!musicLink){
+                // 获取音乐播放链接
+                let musicLinkData=await request('/song/url',{
+                    id:musicId
+                })
+                musicLink=musicLinkData.data[0].url
+                this.setData({
+                    musicLink
+                })
+            }
             this.backgroundAudioManager.src=musicLink
             this.backgroundAudioManager.title=this.data.song.name + ' - 凡音'
         } else { // 暂停
@@ -95,5 +134,26 @@ Page({
         })
         // 修改全局音乐播放的状态
         appInstance.globalData.isMusicPlay=isPlay
+    },
+    // 点击切歌回调
+    handleSwitch (event){
+        let type=event.target.id
+        console.log(type)
+        // 关闭当前播放的音乐
+        this.backgroundAudioManager.stop()
+
+        // 发布消息数据给recommendSong页面
+        PubSub.publish('switchType',type)
+
+        // 订阅来自recommendsong页面发布的musicId消息
+        PubSub.subscribe('musicId',(msg,musicId)=>{
+            console.log(musicId)
+            // 获取新音乐的详细信息
+            this.getMusicInfo(musicId)
+            // 自动播放音乐
+            this.musicControl(true,musicId)
+            // 取消订阅
+            PubSub.unsubscribe('musicId')
+        })
     }
 });

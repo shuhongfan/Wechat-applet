@@ -1791,6 +1791,11 @@ Page({
                 imageUrl:'/static/images/nvsheng.jpg'
             }
         }
-
+    },
+    // 跳转搜索界面
+    toSearch (){
+        wx.navigateTo({
+            url:'/pages/search/search'
+        })
     }
 });

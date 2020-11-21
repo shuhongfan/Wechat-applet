@@ -22,8 +22,9 @@
                     wx:key="id"
                     bindtap="toSongDetail"
                     data-song="{{item}}"
+                    data-index="{{index}}"
             >
-                <image src="{{item.album.picUrl}}"></image>
+                <image src="{{item.al.picUrl}}"></image>
                 <view class="musicInfo">
                     <text class="musicName">{{item.name}}</text>
                     <text class="author">{{item.artists[0].name}}</text>
