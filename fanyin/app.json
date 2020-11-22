@@ -1,10 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/other/other",
     "pages/search/search",
-    "pages/recommendSong/recommendSong",
-    "pages/songDetail/songDetail",
     "pages/video/video",
     "pages/personal/personal",
     "pages/login/login"
@@ -44,5 +41,26 @@
       }
     ]
   },
-  "requiredBackgroundModes": ["audio"]
+  "requiredBackgroundModes": ["audio"],
+  "subpackages": [
+    {
+      "root": "songPackage",
+      "pages": [
+        "pages/recommendSong/recommendSong",
+        "pages/songDetail/songDetail"
+      ]
+    },
+    {
+      "root": "otherPackage",
+      "name": "other",
+      "pages": [
+        "pages/other/other"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/index/index": {
+      "packages": ["songPackage", "other"]
+    }
+  }
 }

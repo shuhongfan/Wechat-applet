@@ -1,4 +1,4 @@
-import request from "../../utils/request";
+import request from "../../../utils/request";
 import PubSub from 'pubsub-js'
 Page({
     data: {
@@ -74,7 +74,7 @@ Page({
         wx.navigateTo({
             // 不能将song对象作为参数传递 长度过长 会被截取
             // url:'/pages/songDetail/songDetail?song='+JSON.stringify(song)
-            url:'/pages/songDetail/songDetail?musicId='+song.id
+            url:'/songPackage/pages/songDetail/songDetail?musicId='+song.id
         })
     }
 });
