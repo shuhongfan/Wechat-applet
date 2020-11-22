@@ -2,4 +2,5 @@
 
 export default{
   host:"https://autumnfish.cn"
+  // host:"http://localhost:3000"
 }

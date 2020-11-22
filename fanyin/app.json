@@ -1,13 +1,13 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/other/other",
     "pages/search/search",
     "pages/recommendSong/recommendSong",
     "pages/songDetail/songDetail",
     "pages/video/video",
     "pages/personal/personal",
-    "pages/login/login",
-    "pages/other/other"
+    "pages/login/login"
   ],
   "style": "v2",
   "sitemapLocation": "sitemap.json",
