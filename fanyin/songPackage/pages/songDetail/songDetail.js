@@ -25,7 +25,7 @@ Page({
     onLoad: function (options) {
         // options用来接收路由跳转的query参数
         // 原生小程序中路由传参，对参数的长度有限制
-        // console.log(options)
+        console.log(options)
         // console.log(JSON.parse(options.song))
         let musicId=options.musicId
         this.setData({
@@ -33,17 +33,27 @@ Page({
         })
         this.getMusicInfo(musicId)
 
+        this.backgroundAudioManager=wx.getBackgroundAudioManager()
         // 判断当前页面音乐是否在播放
         if (appInstance.globalData.isMusicPlay && appInstance.globalData.musicId===musicId){
             this.setData({
                 isPlay:true
             })
+        } else {
+            this.setData({
+                isPlay:false
+            })
+            this.changePlayState(false)
+            this.setData({
+                isPlay:true
+            })
+            this.musicControl(this.data.isPlay,musicId)
         }
 
         // 如果用户操作系统的控制音乐播放、暂停按钮，页面不知道，导致页面显示的播放状态不一致
         // 通过控制音频的实例backgroundAudioManager 去监视音乐的播放、暂停
         // 创建控制音乐播放的实例
-        this.backgroundAudioManager=wx.getBackgroundAudioManager()
+
         this.backgroundAudioManager.onPlay(()=>{
             console.log('Play')
             this.changePlayState(true)

@@ -98,6 +98,7 @@
 }
 .topListSwiper{
   height: 400rpx;
+  border-radius: 30rpx;
 }
 .musicItem{
   /*当一个元素设置为flex 其子元素自动成为block元素*/
