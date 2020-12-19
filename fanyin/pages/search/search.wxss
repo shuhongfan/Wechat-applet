@@ -58,6 +58,7 @@
     height: 80rpx;
     line-height: 80rpx;
     font-size: 26rpx;
+    overflow: hidden;
 }
 .hotItem .order{
     margin: 0 10rpx;

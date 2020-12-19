@@ -1,12 +1,13 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/rankingList/rankingList",
     "pages/search/search",
     "pages/video/video",
     "pages/personal/personal",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/searchList/searchList"
   ],
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "window": {
     "navigationBarBackgroundColor": "#d43c33",
@@ -45,6 +46,7 @@
   "subpackages": [
     {
       "root": "songPackage",
+      "name": "song",
       "pages": [
         "pages/recommendSong/recommendSong",
         "pages/songDetail/songDetail"
@@ -56,11 +58,19 @@
       "pages": [
         "pages/other/other"
       ]
+    },
+    {
+      "root": "songListPackage",
+      "name": "songList",
+      "pages": [
+        "pages/recommendSongList/recommendSongList",
+        "pages/playLists/playLists"
+      ]
     }
   ],
   "preloadRule": {
     "pages/index/index": {
-      "packages": ["songPackage", "other"]
+      "packages": ["songPackage", "other", "songList"]
     }
   }
 }

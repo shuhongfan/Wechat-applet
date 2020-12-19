@@ -105,5 +105,29 @@ Page({
                 }
             }
         })
+    },
+    // 跳转到音乐详情页
+    toSearchList (keywords) {
+        wx.navigateTo({
+            url:'/pages/searchList/searchList?keywords='+keywords
+        })
+    },
+    handleHotItem (item) {
+        console.log(item)
+        const keywords = item.currentTarget.dataset.item.first
+        this.toSearchList(keywords)
+    },
+    handleSearchContent (item) {
+        console.log(item)
+        const keywords = item.currentTarget.dataset.item.name
+        this.toSearchList(keywords)
+    },
+    handleHistoryItem (item) {
+        console.log(item)
+        const keywords = item.currentTarget.dataset.item
+        this.toSearchList(keywords)
+    },
+    goback () {
+        wx.navigateBack()
     }
 });

@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vant/weapp": "^1.6.2",
+    "miniprogram-computed": "^2.2.0",
     "moment": "^2.29.1",
     "pubsub-js": "^1.9.1"
   }

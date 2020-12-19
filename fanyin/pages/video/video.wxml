@@ -1,31 +1,36 @@
 <view class="videoContainer">
 <!--    头部区域-->
-    <div class="header">
+    <view class="header">
         <image src="/static/images/video/video.jpg"></image>
         <view class="search" bindtap="toSearch">
             搜索音乐
         </view>
         <image src="/static/images/logo.png"></image>
-    </div>
+    </view>
 <!--    导航区域-->
-    <scroll-view
-            scroll-x
-            class="navScroll"
-            enable-flex
-            scroll-into-view="{{'scroll'+navID}}"
-            scroll-with-animation
-    >
-        <view id="{{'scroll'+item.id}}" wx:for="{{videoGroupList}}" wx:key="id" class="navItem">
-            <view
-                    class="navContent {{navID===item.id?'active':''}}"
-                    bindtap="changeNav"
-                    id="{{item.id}}"
-                    data-id="{{item.id}}"
-            >
-                {{item.name}}
-            </view>
-        </view>
-    </scroll-view>
+    <van-dropdown-menu>
+        <van-dropdown-item bind:change="onAreaChange" value="{{ area }}" options="{{ areas }}" />
+        <van-dropdown-item bind:change="onTypeChange" value="{{ type }}" options="{{ types }}" />
+        <van-dropdown-item bind:change="onOrderChange" value="{{ order }}" options="{{ orders }}" />
+    </van-dropdown-menu>
+<!--    <scroll-view-->
+<!--            scroll-x-->
+<!--            class="navScroll"-->
+<!--            enable-flex-->
+<!--            scroll-into-view="{{'scroll'+navID}}"-->
+<!--            scroll-with-animation-->
+<!--    >-->
+<!--        <view id="{{'scroll'+item.id}}" wx:for="{{videoGroupList}}" wx:key="id" class="navItem">-->
+<!--            <view-->
+<!--                    class="navContent {{navID===item.id?'active':''}}"-->
+<!--                    bindtap="changeNav"-->
+<!--                    id="{{item.id}}"-->
+<!--                    data-id="{{item.id}}"-->
+<!--            >-->
+<!--                {{item.name}}-->
+<!--            </view>-->
+<!--        </view>-->
+<!--    </scroll-view>-->
 <!--    视频列表区域-->
     <scroll-view
             scroll-y
@@ -35,15 +40,15 @@
             refresher-triggered="{{isTriggered}}"
             bindscrolltolower="handleToLower"
     >
-        <view class="videoItem" wx:for="{{videoList}}" wx:key="id">
+        <view class="videoItem" wx:for="{{mvData}}" wx:key="id">
             <video
-                    wx:if="{{videoID===item.data.vid}}"
+                    wx:if="{{videoID==item.id}}"
                     class="common"
                     object-fit="fill"
-                    src="{{item.data.urlInfo.url}}"
-                    poster="{{item.data.coverUrl}}"
+                    src="{{mvUrl}}"
+                    poster="{{item.cover}}"
                     bindplay="handlePlay"
-                    id="{{item.data.vid}}"
+                    id="{{item.id}}"
                     bindtimeupdate="handleTimeUpdate"
                     bindended="handleEnded"
             ></video>
@@ -51,13 +56,15 @@
             <image
                     wx:else
                     bindtap="handlePlay"
-                    id="{{item.data.vid}}"
+                    id="{{item.id}}"
                     class="common"
-                    src="{{item.data.coverUrl}}"></image>
-            <view class="content">{{item.data.title}}</view>
+                    src="{{item.cover}}">
+                <van-icon name="play-circle-o"  class="infoplay" color="white"/>
+            </image>
+            <view class="content">{{item.name}}</view>
             <view class="footer">
                 <image class="avatar" src="{{item.data.creator.avatarUrl}}"></image>
-                <text class="nickName">{{item.data.creator.nickname}}</text>
+                <text class="nickName">{{item.artists.name}}</text>
                 <view class="comments_praised">
                     <text class="item">
                         <text class="iconfont icon-buoumaotubiao15"></text>

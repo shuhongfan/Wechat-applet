@@ -1,6 +1,7 @@
 // pages/index/index.js
 import request from '../../utils/request'
 import PubSub from 'pubsub-js'
+import Notify from '../../miniprogram_npm/@vant/weapp/notify/notify';
 Page({
 
   /**
@@ -16,8 +17,7 @@ Page({
     // 最新音乐数据
     latestMusic: [],
     // 排行榜
-    topList: [],
-    topList2: []
+    topList: []
   },
 
   /**
@@ -31,8 +31,14 @@ Page({
     // 获取最新音乐数据
     this.getLatestMusicList()
     // 排行榜
-    this.getTopList()
-    this.getTopList2()
+    this.getTopList('19723756')
+    this.getTopList('3779629')
+    this.getTopList('2884035')
+    this.getTopList('3778678')
+    this.getTopList('5213356842')
+    this.getTopList('991319590')
+    this.getTopList('71384707')
+    this.getTopList('1978921795')
 
     // 订阅来自songDetail页面发布的消息
     PubSub.subscribe('switchType',(msg, type)=>{
@@ -75,32 +81,13 @@ Page({
     })
   },
   // 排行榜数据
-  async getTopList (){
+  async getTopList (topListIds){
     // 需要根据idx的值获取对应的数据
     // idx的取值范围是0-20 我们需要0-4
     let index=0
-    let resultArr=[]
+    let resultArr=this.data.topList
     let topListData = await request('/playlist/detail',{
-      id: 19723756
-    })
-    let topListItem={
-      name:topListData.playlist.name,
-      tracks:topListData.playlist.tracks.slice(0,3)
-    }
-    console.log('结果数据',topListItem)
-    resultArr.push(topListItem)
-    // 更新toplist的状态值 会导致页面长时间白屏 用户体验差
-    this.setData({
-      topList: resultArr
-    })
-  },
-  async getTopList2 () {
-    // 需要根据idx的值获取对应的数据
-    // idx的取值范围是0-20 我们需要0-4
-    let index=0
-    let resultArr=[]
-    let topListData = await request('/playlist/detail',{
-      id: 3779629
+      id: topListIds
     })
     let topListItem={
       name:topListData.playlist.name,
@@ -126,6 +113,12 @@ Page({
       url: '/songPackage/pages/recommendSong/recommendSong'
     })
   },
+  // 跳转至RankingList
+  toRankingList () {
+    wx.navigateTo({
+      url: '/pages/rankingList/rankingList'
+    })
+  },
   // 跳转至songdetail
   toSongDetail(event){
     console.log(event)
@@ -139,6 +132,32 @@ Page({
 
     wx.navigateTo({
       url:'/songPackage/pages/songDetail/songDetail?musicId='+musicid
+    })
+  },
+  // 跳转至RecommendSongList
+  toRecommendSongList (event) {
+    console.log(event)
+    let {listid}=event.currentTarget.dataset
+    wx.navigateTo({
+      url:'/songListPackage/pages/recommendSongList/recommendSongList?listid='+listid
+    })
+  },
+  to404 () {
+    Notify({ type: 'warning', message: '上线中....' })
+  },
+  // 跳转搜索界面
+  toSearch (){
+    wx.navigateTo({
+      url:'/pages/search/search'
+    })
+  },
+  // 跳转到歌单详情页
+  goRecommendSong (event) {
+    // console.log(event)
+    const listId = event.currentTarget.dataset.id
+    console.log(listId)
+    wx.navigateTo({
+      url: '/songListPackage/pages/playLists/playLists?listId='+listId
     })
   },
   /**

@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5453d27e-bf8c-48c9-97e8-90efc586283d" name="默认的" comment="微信小程序 end">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/songPackage/pages/songDetail/songDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/songPackage/pages/songDetail/songDetail.js" afterDir="false" />
-    </list>
+    <list default="true" id="5453d27e-bf8c-48c9-97e8-90efc586283d" name="默认的" comment="微信小程序 end" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,17 +29,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Wechat mini program component js file" />
+        <option value="Wechat mini program component json file" />
         <option value="Wechat mini program page js file(Page API)" />
         <option value="Wechat mini program page json file(Page API)" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="eea15953-9249-4ea2-a8ca-8a79baf5da85" />
   <component name="ProjectId" id="1jrZ57Cz3ESit6SFMeKsWODrfk3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="2" id="新增" />
   </component>
   <component name="ProjectReloadState">
@@ -60,11 +56,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -105,6 +103,18 @@
       <workItem from="1606094562612" duration="14000" />
       <workItem from="1606353218198" duration="21000" />
       <workItem from="1606636704760" duration="9888000" />
+      <workItem from="1607166620585" duration="2239000" />
+      <workItem from="1607319483402" duration="14149000" />
+      <workItem from="1607398250001" duration="19477000" />
+      <workItem from="1607487087559" duration="1242000" />
+      <workItem from="1607492851090" duration="12785000" />
+      <workItem from="1607760939492" duration="6365000" />
+      <workItem from="1607830554651" duration="13797000" />
+      <workItem from="1607917163415" duration="6132000" />
+      <workItem from="1608047395043" duration="137000" />
+      <workItem from="1608047545325" duration="9050000" />
+      <workItem from="1608097588819" duration="5000000" />
+      <workItem from="1608107702586" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="2020.11.7 end">
       <created>1604748811000</created>
@@ -181,27 +191,5 @@
     <MESSAGE value="2020.11.22 end" />
     <MESSAGE value="微信小程序 end" />
     <option name="LAST_COMMIT_MESSAGE" value="微信小程序 end" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="533" y="120" key="#JavaScript" timestamp="1604739447976">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="533" y="120" key="#JavaScript/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1604739447976" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605370585093">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1605370585093" />
-    <state x="182" y="108" key="SettingsEditor" timestamp="1606639072715">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="182" y="108" key="SettingsEditor/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1606639072715" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1606065875091">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1606065875091" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605978157159">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1536.824@0.0.1536.824" timestamp="1605978157159" />
   </component>
 </project>
